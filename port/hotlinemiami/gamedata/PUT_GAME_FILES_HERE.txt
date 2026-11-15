@@ -1,0 +1,1 @@
+Copy the contents of the GOG Linux installer's data/noarch/game/ folder here (Hotline, HotlineMiami_GL.wad, *.ogg ...).
