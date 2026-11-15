@@ -4,6 +4,10 @@ A port of **Hotline Miami** (the GOG Linux build) to the Anbernic RG34XX / RG34X
 
 The game is **not included**. You need your own copy of the GOG Linux version.
 
+![Gameplay on an RG34XXSP (tutorial, recorded on the device)](docs/gameplay.gif)
+
+*Recorded on an RG34XXSP running stock firmware (screen capture, no audio). Full-quality MP4 on the [release page](../../releases).*
+
 ## What's in the box
 
 The Linux build of Hotline Miami is a 32-bit x86 program that expects an X server, desktop OpenGL and NVIDIA Cg. None of those exist on the handheld, so this port puts together:
@@ -25,13 +29,13 @@ The Linux build of Hotline Miami is a 32-bit x86 program that expects an X serve
    ```
    Roms/PORTS/Hotline Miami.sh
    Roms/PORTS/hotlinemiami/...
+   Roms/PORTS/Imgs/Hotline Miami.png   (menu artwork)
    ```
 3. Add the game files:
    - Get the GOG Linux installer (`gog_hotline_miami_2.0.0.4.sh` or similar) from your GOG library.
    - The installer is a shell script with a zip appended, so you can open it with [7-Zip](https://www.7-zip.org/) (`7z x -tzip gog_hotline_miami_*.sh`), or just run it on a Linux PC.
    - Copy **everything** in `data/noarch/game/` (`Hotline`, `HotlineMiami_GL.wad`, all the `.ogg` files, ...) into `Roms/PORTS/hotlinemiami/gamedata/`. It's about 520 MB.
-4. Optional: drop a box-art image at `Roms/PORTS/Imgs/Hotline Miami.png`.
-5. Launch **Hotline Miami** from the Ports menu. The first boot takes a few seconds longer.
+4. Launch **Hotline Miami** from the Ports menu. The first boot takes a few seconds longer.
 
 ## Controls
 

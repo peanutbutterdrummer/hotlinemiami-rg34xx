@@ -7,6 +7,7 @@ cd "$(dirname "$0")"
 RT=${1:?runtime dir}; VER=${2:-dev}
 S=dist/stage; rm -rf dist; mkdir -p $S/hotlinemiami/{shim,x86,gamedata}
 cp "port/Hotline Miami.sh" $S/
+mkdir -p $S/Imgs && cp "port/Imgs/Hotline Miami.png" $S/Imgs/
 cp port/hotlinemiami/hm1.gptk out/fbmode $S/hotlinemiami/
 cp port/hotlinemiami/gamedata/PUT_GAME_FILES_HERE.txt $S/hotlinemiami/gamedata/
 cp out/libX11.so.6 out/hm1gl.so out/padfix.so $S/hotlinemiami/shim/
